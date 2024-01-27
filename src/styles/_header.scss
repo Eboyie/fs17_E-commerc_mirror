@@ -1,0 +1,185 @@
+/*
+============
+Navbar
+============
+*/
+
+@import 'config';
+
+@mixin flexCenterHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eceaea;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: #99d8eb;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav-logo h1 {
+  font-weight: bold;
+  color: #99d8eb;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s linear;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #362c2c;
+
+  &:hover {
+    background: #99d8ed;
+  }
+}
+
+/* 224*/
+
+.nav-ul {
+  display: none;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    a {
+      padding-right: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .nav-center {
+    @include flexCenterHeader();
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    transition: all 0.3s linear;
+
+    a {
+      display: flex;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background: transparent;
+        color: #99d8ed;
+      }
+    }
+  }
+
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-ul {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+}
+
+/*
+============
+Hero
+============
+*/
+.hero {
+  min-height: 100vh;
+  background: #99d8eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  text-align: center;
+  color: #fff;
+  padding: 0 3rem;
+}
+
+.hero-banner h1 {
+  text-transform: capitalize;
+}
+
+.hero-banner p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.25rem;
+}
+
+.hero-btn {
+  padding: 0.9rem;
+  background: #f1eded;
+  color: #9c9c94;
+}
+.hero-btn:hover {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../images/hero.jpg') center/cover no-repeat;
+  }
+  .hero-banner {
+    padding: 0;
+  }
+  .hero-banner p {
+    max-width: 45rem;
+  }
+}

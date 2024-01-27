@@ -1,0 +1,50 @@
+/*
+===========
+Footer
+===========
+*/
+
+@mixin flexCenterFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexCenterFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background: grey;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+
+  p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.footer-links {
+  @include flexCenterFooter();
+  margin-bottom: 1.2rem;
+
+  li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s linear;
+
+    &:hover {
+      border-bottom: 4px solid #0a0a02;
+      font-weight: 900;
+    }
+  }
+}

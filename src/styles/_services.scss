@@ -1,0 +1,170 @@
+/*
+============
+service
+============
+*/
+.services {
+  background: #dcebea;
+
+  .service {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.section {
+  padding: 0;
+}
+
+.service-info {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+  max-width: 25rem;
+  margin: 0 auto;
+
+  h2 {
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    letter-spacing: 0.25rem;
+    margin-bottom: 0;
+  }
+}
+
+.service-info p {
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+}
+
+.service-icon {
+  background: #c6c7c2;
+  color: #fff;
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.service-support {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.service-card p {
+  letter-spacing: 0.25rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-info {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  .service-info {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+/*
+===========
+form
+===========
+*/
+
+.section-form {
+  margin-top: 0;
+  padding: 0 1.5rem;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  .info-data {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      letter-spacing: 0.25rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.fa-envelope-open {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &-control {
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.25rem;
+    border-radius: 10px;
+  }
+}
+
+.form-control::placeholder {
+  font-size: 1.25rem;
+}
+.form-btn {
+  background: #018a01;
+  margin: 0.5rem;
+  border-radius: 10px;
+
+  &:hover {
+    color: #008000;
+    font-weight: bold;
+  }
+}
+
+.form-text p {
+  max-width: 35rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .info-data {
+    justify-content: center;
+  }
+
+  .form-text p {
+    max-width: 55rem;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form-text p {
+    max-width: 55rem;
+    text-align: center;
+  }
+}

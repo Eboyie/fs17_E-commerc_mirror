@@ -1,1 +1,65 @@
 // scss code here
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global classes */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1eded;
+  color: #352b2b;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  color: lightcoral;
+  background: #fff;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+@import 'header';
+
+@import 'featured';
+
+@import 'services';
+
+@import 'footer';
