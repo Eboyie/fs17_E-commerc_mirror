@@ -18,14 +18,14 @@ featured
 .product-card {
   transform: all 0.3s linear;
   background: lightgrey;
-  box-shadow: $box-shadow;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
   transition: all 0.3s linear;
 }
 
 .single-product:hover {
   background: #e6dfdf;
-  box-shadow: $box-shadow;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .featured-info {
